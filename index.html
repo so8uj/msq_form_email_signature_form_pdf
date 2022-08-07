@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSQ from</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        
+        body{
+            font-family: 'Century Schoolbook';
+            font-size: 14px;
+            margin:auto;
+            width: 794px;
+            background: rgb(197, 197, 197);
+        
+        }
+        .body-container{
+            width: 100%;
+            background: #fff;
+            padding-bottom: 50px;
+        }
+        .header{
+            text-align: center;
+            padding: 20px 0px;
+        }
+        .header .logo img{
+            width: 220px;
+            margin-bottom: 10px;
+        }
+        h2.title {
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .content{
+            padding: 0 80px;
+
+        }
+        .w-50{
+            width: 50%;
+        }
+        .header-info{
+            margin-right: 10px;
+        }
+        .line {
+            width: 20%;
+            border-bottom: 1px solid black;
+        }
+        .header-line{
+            width: 60%;
+        }
+        .header-line-2{
+            width: 45%;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .py-20{
+            padding: 20px 0px
+
+        }
+        .wid-100{
+            width: 100%;
+        }
+        .justify-center{
+            justify-content: center;
+        }
+        .check-input{ 
+            width: 160px;
+        }
+        .check-input label input{ 
+            margin-right: 10px;
+        }
+        .check-input label{
+            font-style: italic;
+        }
+        .text-italic{
+            font-style: italic;
+        }
+        .title-clmn {
+            width: 23%;
+        }
+        .total-clmn{
+            width: 17%;
+            position: relative;
+        }
+        .total-clmn .d-flex.wid-100.mb-10{
+            position: absolute;
+            bottom: 0;
+        }
+        .des-clmn {
+            width: 60%;
+        }
+        .text-normal{
+            font-style: normal;
+        }
+        .des-clmn ul{
+            list-style: none;
+        }
+        .culmn-area {
+            margin-bottom: 20px;
+        }
+        .title-clmn h4{
+            font-style: italic;
+            text-transform: uppercase;
+
+        }
+
+        .ml-30{
+            margin-left: 30px;
+        }
+        .mr-10{
+            margin-right: 10px;
+        }
+        .mb-10{
+            margin-bottom: 10px;
+        }
+        .total-line{
+            width: 50%;
+        }
+        .wid-80{
+            width: 80%;
+        }
+        .grand-total{
+
+            margin-top: 60px
+        }
+        .text-uppper{
+            text-transform: uppercase;
+        }
+
+    </style>
+    
+</head>
+<body>
+    
+    <div class="body-container">
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <h2 class="title">Medical Symptoms Questionnaire</h2>
+        </div>
+
+        <div class="content">
+            <div class="d-flex">
+                <div class="w-50"> 
+                    <div class="d-flex">
+                        <b class="header-info">Name </b> 
+                        <div class="line header-line"></div>
+                    </div>
+                </div>
+                <div class="w-50">
+                    <div class="d-flex">
+                        <b class="header-info">Date </b> 
+                        <div class="line header-line-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center py-20">
+                Rate each of the following symptoms based upon your typical health profile for:
+                <div class="d-flex wid-100 justify-center">
+                    <div class="check-input">
+                        <label for=""><input type="checkbox" name="" id="">  Past 30 day</label>
+                    </div>
+                    <div class="check-input">
+                        <label for=""><input type="checkbox" name="" id="">   Past 48 hours</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex text-italic">
+                <div class="title-clmn">
+                    Point Scale
+                </div>
+                <div class="des-clmn">
+                    <ul>
+                        <li> <span class="text-normal">0</span> - Never or almost never have the symptom</li>
+                        <li> <span class="text-normal">1</span> - Occasionally have it, effect is not severe</li>
+                        <li> <span class="text-normal">2</span> - Occasionally have it, effect is severe</li>
+                        <li> <span class="text-normal">3</span> - Frequently have it, effect is not severe</li>
+                        <li> <span class="text-normal">4</span> - Frequently have it, effect is severe</li>
+                    </ul>
+                </div>
+                <div class="total-clmn"></div>
+            </div>
+
+            <!-- Body part sections -->
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>HEAD</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line">Test Text</div> <span class="ml-30">Headaches</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Faintness</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Dizziness</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Insomnia</span>
+                    </div>
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>EYES</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Watery or itchy eyes </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Swollen, reddened or sticky eyelids</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Bags or dark circles under eyes </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Blurred or tunnel vision <br> (does not include near or far-sightedness) </span>
+                    </div>
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>EARS</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Itchy ears</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Earaches, ear infections</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Drainage from ear </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Ringing in ears, hearing loss </span>
+                    </div>
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>NOSE</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Stuffy nose </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Sinus problems</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Hay fever</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Sneezing attacks </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Excessive mucus formation </span>
+                    </div>
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>MOUTH/THROAT</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Chronic coughing</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Gagging, frequent need to clear throat</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Sore throat, hoarseness, loss of voice</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Swollen or discolored tongue, gums, lips  </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Canker sores </span>
+                    </div>
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>SKIN</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Acne</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Hives, rashes, dry skin</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Hair loss</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Flushing, hot flashes </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Excessive sweating </span>
+                    </div>
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>HEART</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Irregular or skipped heartbeat</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Rapid or pounding heartbeat </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Chest pain</span>
+                    </div>
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>LUNGS</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Chest congestion </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Asthma, bronchitis</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Shortness of breath</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Difficulty breathing</span>
+                    </div>
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>DIGESTIVE TRACT</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Nausea, vomiting </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Diarrhea </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Constipation</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Bloated feeling</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Belching, passing gas </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Heartburn </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Intestinal/stomach pain </span>
+                    </div>
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>JOINTS/MUSCLE</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Pain or aches in joints </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Arthritis </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Stiffness or limitation of movement</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Pain or aches in muscles </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Feeling of weakness or tiredness</span>
+                    </div>
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>WEIGHT</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Binge eating/drinking</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Craving certain foods </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Excessive weight</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Compulsive eating  </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Water retention </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Underweight</span>
+                    </div>
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>ENERGY/ACTIVITY</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Fatigue, sluggishness</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Apathy, lethargy </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Hyperactivity </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Restlessness</span>
+                    </div>
+                   
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>MIND</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Poor memory</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Confusion, poor comprehension  </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Poor concentration  </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Poor physical coordination</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Difficulty in making decisions </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Stuttering or stammering</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Slurred speech </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Learning disabilities</span>
+                    </div>
+                   
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>EMOTIONS</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Mood swings </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Anxiety, fear, nervousness </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Anger, irritability, aggressiveness </span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Depression</span>
+                    </div>
+                   
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex">
+                <div class="title-clmn">
+                    <h4>OTHER</h4>
+                </div>
+                <div class="des-clmn">
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Frequent illness</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Frequent or urgent urination</span>
+                    </div>
+                    <div class="d-flex mb-10">
+                        <div class="line"></div> <span class="ml-30">Genital itch or discharge </span>
+                    </div>
+                   
+                </div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culmn-area d-flex grand-total">
+                <div class="title-clmn">
+                    <h5>GRAND TOTAL </h5>
+                </div>
+                <div class="des-clmn"></div>
+                <div class="total-clmn">
+                    <div class="d-flex wid-100 mb-10">
+                        <span class="mr-10 text-italic text-uppper">Total</span><div class="line total-line"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>
